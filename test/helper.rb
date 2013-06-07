@@ -1,11 +1,10 @@
-require 'rubygems'
-require 'bundler'
-Bundler.setup
+require 'bundler/setup'
 require 'active_support'
 require 'test/unit'
 require 'active_record'
 require 'active_record/fixtures'
 require 'shoulda'
+require 'mocha/setup'
 
 require File.expand_path "../database", __FILE__
 

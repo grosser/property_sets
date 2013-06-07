@@ -13,7 +13,7 @@ Gem::Specification.new "property_sets", "0.8.0" do |s|
   s.add_development_dependency('rake')
   s.add_development_dependency('bundler')
   s.add_development_dependency('shoulda')
-  s.add_development_dependency('mocha')
+  s.add_development_dependency('mocha', '~> 0.13.0')
   s.add_development_dependency('appraisal')
 
   s.files = `git ls-files`.split("\n")

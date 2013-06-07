@@ -1,3 +1,4 @@
+require 'bundler/setup'
 require 'bundler/gem_tasks'
 require 'appraisal'
 
@@ -9,5 +10,5 @@ Rake::TestTask.new do |test|
 end
 
 task :default do
-  sh "bundle exec rake appraisal:install && bundle exec rake appraisal test"
+  sh "rake appraisal:install && rake appraisal test"
 end
