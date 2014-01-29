@@ -8,6 +8,7 @@ require 'shoulda'
 if ActiveSupport::VERSION::MAJOR == 2
   require 'mocha'
 else
+  I18n.enforce_available_locales = false
   require 'mocha/setup'
 end
 
