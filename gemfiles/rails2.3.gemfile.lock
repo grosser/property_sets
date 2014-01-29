@@ -1,5 +1,5 @@
 PATH
-  remote: /Users/mgrosser/code/tools/property_sets
+  remote: ../
   specs:
     property_sets (0.8.0)
       actionpack (>= 2.3.14, < 3.3)
@@ -24,8 +24,8 @@ GEM
       bundler
       rake
     jdbc-mysql (5.1.13)
-    json (1.8.0)
-    json (1.8.0-java)
+    json (1.8.1)
+    json (1.8.1-java)
     metaclass (0.0.1)
     mocha (0.13.3)
       metaclass (~> 0.0.1)
