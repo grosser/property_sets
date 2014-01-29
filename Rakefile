@@ -1,6 +1,7 @@
 require 'bundler/setup'
 require 'bundler/gem_tasks'
 require 'appraisal'
+require 'wwtd/tasks'
 
 require 'rake/testtask'
 Rake::TestTask.new do |test|
@@ -9,6 +10,4 @@ Rake::TestTask.new do |test|
   test.verbose = true
 end
 
-task :default do
-  sh "rake appraisal:install && rake appraisal test"
-end
+task :default => ["appraisal:gemfiles", "appraisal:install", :wwtd]

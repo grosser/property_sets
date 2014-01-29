@@ -4,7 +4,7 @@ ActiveRecord::Base.logger = Logger.new(STDOUT)
 ActiveRecord::Base.logger.level = Logger::ERROR
 
 config = {
-  :adapter  => 'mysql',
+  :adapter  => 'mysql2',
   :database => 'property_sets_test',
   :username => 'root',
   :password => nil,

@@ -1,10 +1,15 @@
 require 'bundler/setup'
 require 'active_support'
+require 'active_support/version'
 require 'test/unit'
 require 'active_record'
 require 'active_record/fixtures'
 require 'shoulda'
-require 'mocha/setup'
+if ActiveSupport::VERSION::MAJOR == 2
+  require 'mocha'
+else
+  require 'mocha/setup'
+end
 
 require File.expand_path "../database", __FILE__
 
